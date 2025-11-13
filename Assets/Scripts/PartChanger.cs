@@ -11,15 +11,14 @@ public class PartChanger : MonoBehaviour
     public Image dressesImage;
     public Image bottomsImage;
     public Image topsImage;
-    public Image bodyImage;       // neck-down body
-    public Image faceImage;       // head/face base
+    public Image bodyImage;
+    public Image faceImage;
     public Image blushImage;
     public Image mouthImage;
     public Image browsImage;
     public Image eyesImage;
     public Image hairImage;
 
-    // 🧍 Base Layers
     public void ChangeBody(Sprite newBody)
     {
         if (bodyImage != null)
@@ -32,7 +31,6 @@ public class PartChanger : MonoBehaviour
             faceImage.sprite = newFace;
     }
 
-    // 👀 Facial Features
     public void ChangeEyes(Sprite newEyes)
     {
         if (eyesImage != null)
@@ -57,14 +55,12 @@ public class PartChanger : MonoBehaviour
             blushImage.sprite = newBlush;
     }
 
-    // 💇 Hair
     public void ChangeHair(Sprite newHair)
     {
         if (hairImage != null)
             hairImage.sprite = newHair;
     }
 
-    // 👕 Clothing
     public void ChangeTops(Sprite newTop)
     {
         if (topsImage != null)
@@ -89,7 +85,6 @@ public class PartChanger : MonoBehaviour
             shoesImage.sprite = newShoes;
     }
 
-    // 🎀 Extras
     public void ChangeAccessories(Sprite newAccessory)
     {
         if (accessoriesImage != null)

@@ -3,12 +3,11 @@ using UnityEngine.UI;
 
 public class CategoryInitializer : MonoBehaviour
 {
-    public string categoryName; // e.g. "Hair", "Eyes", etc.
-    public PartChanger partChanger; // drag your Character/PartChanger here
+    public string categoryName;
+    public PartChanger partChanger;
 
     void Start()
     {
-        // Go through all buttons in this grid
         Button[] buttons = GetComponentsInChildren<Button>();
 
         foreach (Button button in buttons)
@@ -24,8 +23,6 @@ public class CategoryInitializer : MonoBehaviour
             {
                 Debug.LogWarning($"No PartButton found on {button.name}");
             }
-
-            // Assign click event automatically
             button.onClick.RemoveAllListeners();
             button.onClick.AddListener(() => partButton.OnClick());
         }

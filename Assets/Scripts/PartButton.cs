@@ -1,11 +1,11 @@
-﻿using UnityEngine;
+﻿             using UnityEngine;
 using UnityEngine.UI;
 
 public class PartButton : MonoBehaviour
 {
-    [HideInInspector] public string categoryName;  // e.g. "Hair", "Eyes", etc.
+    [HideInInspector] public string categoryName;
     [HideInInspector] public PartChanger partChanger;
-    public Sprite partSprite; // assigned in Inspector or dynamically
+    public Sprite partSprite;
 
     public void OnClick()
     {
